@@ -70,11 +70,11 @@ int main() {
 #ifdef GOOD
   create_shader(vs, "linked_good.spv", "vert1");
 #elif defined(BAD)
-  create_shader(vs, "linked_bad.spv", "vert2");
+  create_shader(vs, "linked_bad.spv", "vert1");
 #else
   #error "Tell me GOOD or BAD"
 #endif
-  
+
   GLuint fs = glCreateShader(GL_FRAGMENT_SHADER);
   create_shader(fs, "linked_good.spv", "frag");
 
